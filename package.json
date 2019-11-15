@@ -1,0 +1,43 @@
+{
+  "name": "@parent/web-app",
+  "version": "1.0.0",
+  "description": "Mono repository for web application",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd modules/web/site && npm i",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-certificatemanager": "1.14.0",
+    "@aws-cdk/aws-cloudfront": "1.14.0",
+    "@aws-cdk/aws-iam": "1.14.0",
+    "@aws-cdk/aws-route53": "1.14.0",
+    "@aws-cdk/aws-route53-targets": "1.14.0",
+    "@aws-cdk/aws-s3": "1.14.0",
+    "@aws-cdk/aws-s3-deployment": "1.14.0",
+    "@aws-cdk/core": "1.14.0",
+    "source-map-support": "0.5.9"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.14.0",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.11",
+    "aws-cdk": "1.14.0",
+    "jest": "24.9.0",
+    "ts-jest": "24.0.2",
+    "ts-node": "8.1.0",
+    "typescript": "3.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-mayank/web-app.git"
+  },
+  "author": "m-mayank",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/m-mayank/web-app/issues"
+  },
+  "homepage": "https://github.com/m-mayank/web-app#readme"
+}
